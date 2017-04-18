@@ -1,0 +1,10 @@
+/* Parametric mixin for headings */
+.center {
+  margin: auto;
+  display: block;
+  border: 3px solid green;
+  padding: 10px;
+  margin-bottom: 30px;
+  margin-top: 45px;
+}
+/* End parametric mixin for headings */

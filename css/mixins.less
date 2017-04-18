@@ -1,0 +1,97 @@
+// out: null
+
+/* Parametric mixin for headings */
+
+.headingStyle(@paramColor; @paramSize) {
+    color: @paramColor; // this accepts a font color passed through as an
+    //argument
+    font-size: @paramSize; // this accepts a font size passed through as an
+    //argument
+    font-weight: bold; // this is static code... not everything has to be
+    //dynamic!
+    line-height: @paramSize; // this reuses three same font size as before to
+    //change line height
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.buttonStyle(@paramSize; @paramColor){
+  //border-radius: @paramSize;
+//  background-color: @paramColor;
+}
+
+.center{
+  margin: auto;
+  display: block;
+  border: 3px solid green;
+  padding: 10px;
+  margin-bottom: 30px;
+  margin-top: 45px;
+}
+
+.dropShadow(@xOffset; @yOffset; @paramSize; @paramColor){
+    -webkit-box-shadow:@xOffset @yOffset @paramSize @paramColor;
+    box-shadow: @xOffset @yOffset @paramSize @paramColor;
+}
+
+.footer (@paramColor) {
+  font-size: .8em;
+  color: @paramColor;
+}
+
+.gradient (@paramColor: #CCC; @paramColor2: #AAA){
+  background: @paramColor; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(@paramColor, @paramColor2); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(@paramColor, @paramColor2); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(@paramColor, @paramColor2); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(@paramColor, @paramColor2); /* Standard syntax */
+}
+
+/* End parametric mixin for headings */
+
+.transparent() {
+  opacity: .5;
+}
+
+.underline_italicized(){
+  text-decoration: underline;
+  text-decoration-style: dashed;
+  text-decoration-color: black;
+  font-style: italic;
+
+}
+
+.uppercase_bold(){
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.image_flip(){
+  -moz-transform: scaleY(-1);
+  -o-transform: scaleY(-1);
+  -webkit-transform: scaleY(-1);
+  transform: scaleY(-1);
+  filter: FlipV;
+  -ms-filter: "FlipV";
+  transition: all 1s ease;
+}
+
+.code(){
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.header_text(){
+  text-shadow: 2px 2px #3a3a3a;
+  font-size: 2.7em;
+  padding-bottom: 10px;
+
+}
+
+.text_hover(){
+font-size: 1.75em;
+color: white;
+font-weight: bold;
+}

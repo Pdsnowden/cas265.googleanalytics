@@ -1,0 +1,142 @@
+/* Color nummbers from Abobecolor and taken from a picture of a dark forrest */
+/* Parametric mixin for headings */
+.center {
+  margin: auto;
+  display: block;
+  border: 3px solid green;
+  padding: 10px;
+  margin-bottom: 30px;
+  margin-top: 45px;
+}
+/* End parametric mixin for headings */
+footer {
+  font-size: .8em;
+  color: #B34129;
+}
+header {
+  background-color: #EB721F;
+}
+header h1 {
+  color: black;
+  font-size: 1.5em;
+  font-family: 'Lakki Reddy', cursive;
+  font-weight: bold;
+}
+header img {
+  max-width: 20%;
+}
+nav {
+  background-color: #D96824;
+  padding-top: 2px;
+  padding-bottom: 5px;
+}
+nav li {
+  display: inline;
+  list-style-type: none;
+}
+nav li a:link {
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1.1em;
+}
+nav li a:hover {
+  font-size: 1.75em;
+  color: white;
+  font-weight: bold;
+}
+main img {
+  margin-top: 15px;
+  max-width: 85%;
+}
+main p:first-of-type {
+  margin-top: 15px;
+}
+main p {
+  text-indent: 20px;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+h1 {
+  color: black;
+  font-size: 1.5em;
+  font-family: 'Lakki Reddy', cursive;
+  font-weight: bold;
+}
+.credit {
+  font-size: .75em;
+  font-style: italic;
+}
+.fanart {
+  max-width: 85%;
+}
+.left_text {
+  text-align: left;
+}
+.pawprint {
+  max-width: 35%;
+  margin-top: 35px;
+}
+.videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  /* 16:9 */
+  padding-top: 25px;
+  height: 0;
+}
+.videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 25px;
+}
+/*TABLET STYLESHEET
+
+The following CSS affects all screen sizes larger than 480 pixels wide.
+
+*/
+@media only screen and (min-width: 481px) {
+  body {
+    font-size: 20px;
+  }
+  nav li {
+    margin-right: 10px;
+  }
+  nav li a:link {
+    font-size: 1.75em;
+  }
+  .videoWrapper iframe {
+    top: 0;
+    left: 0;
+    width: 85%;
+    height: 85%;
+    margin-bottom: 25px;
+  }
+}
+/*
+
+DESKTOP STYLESHEET
+
+The following CSS affects all screen sizes larger than 1024 pixels wide.
+
+*/
+@media only screen and (min-width: 1025px) {
+  header img {
+    max-width: 10%;
+  }
+  nav li {
+    margin-right: 15px;
+  }
+  .pawprint {
+    max-width: 15%;
+  }
+  .videoWrapper iframe {
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 50%;
+    margin-bottom: 10px;
+  }
+}
